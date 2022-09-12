@@ -1,0 +1,9 @@
+gpg --full-gen-key #generate GPG encryption key
+gpg --delete-secret-keys #delete secret counterpart of key pair (required for deleting public counterpart)
+gpg --delete-key #delete public counterpark of key pair
+
+gpg --symmetric --cipher-algo AES256 #GPG symmetric encryption
+
+gpg -d #decrypt encrypted file
+
+systemctl restart mpd
